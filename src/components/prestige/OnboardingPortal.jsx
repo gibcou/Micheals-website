@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { base44 } from "@/api/base44Client";
 import { Check } from "lucide-react";
 
 const ESTATE_TYPES = [
@@ -115,17 +114,9 @@ export default function OnboardingPortal() {
     }
     setSubmitting(true);
     try {
-      await base44.entities.Lead.create({
-        ...form,
-        status: "new",
-      });
+      // Here you would typically send the form data to your backend
+      console.log("Form data:", form);
       setDone(true);
-      try {
-        await base44.functions.invoke("sendLeadConfirmation", {
-          name: form.name,
-          email: form.email,
-        });
-      } catch (e) {}
     } catch (e) {
       setError("Something went wrong sending your request. Please try again.");
     } finally {
