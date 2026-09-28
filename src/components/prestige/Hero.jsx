@@ -34,8 +34,8 @@ export default function Hero({ heroImage, heroVideo }) {
         <Image
           src={heroImage}
           alt="Architectural interior of a luxury mountain estate at blue hour"
-          width={1376}
-          height={768}
+          width={1480}
+          height={819}
           className="ken-burns h-full w-full"
           fittingType="fill"
         />
