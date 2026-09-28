@@ -47,6 +47,8 @@ function ServiceRow({ service, image, i }) {
           <Image
             src={image}
             alt={service.title}
+            width={800}
+            height={1000}
             className="h-full w-full transition-transform duration-1000 ease-out group-hover:scale-[1.05]"
             fittingType="fill"
           />
