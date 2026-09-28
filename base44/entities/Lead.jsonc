@@ -1,0 +1,91 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name of the prospective client"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email for the prospective client"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    "estate_location": {
+      "type": "string",
+      "description": "City or area where the estate is located"
+    },
+    "estate_type": {
+      "type": "string",
+      "enum": [
+        "Primary residence",
+        "Second home / vacation estate",
+        "Investment property",
+        "Commercial property",
+        "Land / ranch"
+      ],
+      "description": "Type of estate to be managed"
+    },
+    "primary_goal": {
+      "type": "string",
+      "enum": [
+        "Peace of mind while away",
+        "Single point of contact for all services",
+        "Preserve and protect property value",
+        "Free up personal time",
+        "Turnkey rental management"
+      ],
+      "description": "The client's primary goal for estate management"
+    },
+    "services_needed": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Property management",
+          "Cleaning services",
+          "Maintenance & contracting",
+          "Seasonal care",
+          "Security oversight",
+          "Vendor coordination"
+        ]
+      },
+      "description": "Services the prospective client is interested in"
+    },
+    "timeline": {
+      "type": "string",
+      "enum": [
+        "Immediately",
+        "Within 1 month",
+        "1-3 months",
+        "Just exploring"
+      ],
+      "description": "When the client wishes to begin"
+    },
+    "details": {
+      "type": "string",
+      "description": "Additional context from the prospective client"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "contacted",
+        "onboarded",
+        "archived"
+      ],
+      "default": "new",
+      "description": "Pipeline status of the lead"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "estate_type",
+    "primary_goal",
+    "timeline"
+  ]
+}

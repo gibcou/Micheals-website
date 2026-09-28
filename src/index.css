@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'Recoleta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://media.base44.com/files/public/builder-assets/wix-fonts/recoleta-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Recoleta';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://media.base44.com/files/public/builder-assets/wix-fonts/recoleta-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Recoleta';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://media.base44.com/files/public/builder-assets/wix-fonts/recoleta-900-normal.woff2') format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Oyster & Obsidian — Prestige Estate Management */
+    --background: 36 26% 94.9%;
+    --foreground: 0 0% 10.2%;
+    --card: 36 24% 96.5%;
+    --card-foreground: 0 0% 10.2%;
+    --popover: 36 24% 96.5%;
+    --popover-foreground: 0 0% 10.2%;
+    --primary: 0 0% 10.2%;
+    --primary-foreground: 36 26% 94.9%;
+    --secondary: 36 13% 86.7%;
+    --secondary-foreground: 0 0% 10.2%;
+    --muted: 36 13% 86.7%;
+    --muted-foreground: 35 8% 38%;
+    --accent: 35 32% 46%;
+    --accent-foreground: 36 26% 96.5%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 36 26% 96.5%;
+    --border: 36 14% 82%;
+    --input: 36 14% 82%;
+    --ring: 35 32% 46%;
+    --radius: 0.25rem;
+
+    --font-heading: 'Recoleta', 'Playfair Display', ui-serif, Georgia, serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Recoleta', 'Playfair Display', ui-serif, Georgia, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "ss01", "cv01";
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tracking-luxe {
+    letter-spacing: 0.28em;
+  }
+
+  .tracking-wide-luxe {
+    letter-spacing: 0.18em;
+  }
+
+  /* Horizon line */
+  .horizon-line {
+    height: 0.5px;
+    background: hsl(var(--foreground) / 0.18);
+  }
+
+  /* Curtain reveal for images */
+  .curtain-reveal {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .curtain-reveal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--background));
+    transform-origin: right;
+    animation: curtain-open 1.1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+
+  @keyframes curtain-open {
+    0% { transform: scaleX(1); }
+    100% { transform: scaleX(0); }
+  }
+
+  /* Slow zoom (Ken Burns) */
+  .ken-burns {
+    animation: ken-burns 18s ease-out forwards;
+  }
+
+  @keyframes ken-burns {
+    0% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  /* Custom cursor — desktop only */
+  @media (pointer: fine) {
+    .cursor-dot {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 9999px;
+      background: hsl(var(--foreground));
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: width 0.25s ease, height 0.25s ease, background 0.25s ease, border 0.25s ease;
+      mix-blend-mode: difference;
+    }
+    .cursor-dot.is-ring {
+      width: 44px;
+      height: 44px;
+      background: transparent;
+      border: 1px solid hsl(var(--accent));
+      mix-blend-mode: normal;
+    }
+    body {
+      cursor: none;
+    }
+    a, button, [data-cursor="ring"] {
+      cursor: none;
+    }
+  }
+
+  /* Film grain overlay */
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0.07;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 240px 240px;
+  }
+
+  /* Sweep-fill button */
+  .sweep {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sweep > span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .sweep::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: hsl(var(--foreground));
+    transform: translateY(101%);
+    transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .sweep:hover::after {
+    transform: translateY(0);
+  }
+
+  .sweep-light::after {
+    background: hsl(var(--background));
+  }
+
+  .sweep-light > span {
+    transition: color 0.35s ease;
+  }
+
+  .sweep-light:hover > span {
+    color: hsl(var(--foreground));
+  }
+
+  /* Animated underline nav link */
+  .nav-link {
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    background: hsl(var(--foreground));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* Quiet scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--accent) / 0.45);
+    border: 3px solid hsl(var(--background));
+    border-radius: 9999px;
+  }
+}
