@@ -27,11 +27,13 @@ export default function Philosophy({ aboutImage }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="curtain-reveal group aspect-[3/2] overflow-hidden md:col-span-7"
+            className="curtain-reveal group overflow-hidden md:col-span-7"
           >
             <Image
               src={aboutImage}
               alt="A formally set dining table in a quiet luxury estate"
+              width={1264}
+              height={948}
               className="h-full w-full transition-transform duration-1000 ease-out group-hover:scale-[1.05]"
               fittingType="fill"
             />

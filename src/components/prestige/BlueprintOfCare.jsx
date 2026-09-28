@@ -40,15 +40,14 @@ function ServiceRow({ service, image, i }) {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className={`curtain-reveal group aspect-[4/5] overflow-hidden md:col-span-5 ${
+          className={`curtain-reveal group overflow-hidden md:col-span-5 ${
             isEven ? "md:order-1" : "md:order-2 md:col-start-8"
           }`}
-        >
-          <Image
+                    <Image
             src={image}
             alt={service.title}
-            width={800}
-            height={1000}
+            width={928}
+            height={1152}
             className="h-full w-full transition-transform duration-1000 ease-out group-hover:scale-[1.05]"
             fittingType="fill"
           />
