@@ -42,8 +42,8 @@ function ServiceRow({ service, image, i }) {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className={`curtain-reveal group overflow-hidden md:col-span-5 ${
             isEven ? "md:order-1" : "md:order-2 md:col-start-8"
-          }`}
-                    <Image
+          }`}>
+          <Image
             src={image}
             alt={service.title}
             width={928}
