@@ -27,7 +27,9 @@ export default function Hero({ heroImage, heroVideo }) {
             muted
             loop
             playsInline
-          />
+          >
+            <track kind="captions" srcLang="en" src="captions.vtt" />
+          </video>
         )}
         <Image
           src={heroImage}
