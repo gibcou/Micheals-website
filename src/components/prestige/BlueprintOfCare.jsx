@@ -5,27 +5,27 @@ import { Image } from "@/components/ui/image";
 const SERVICES = [
   {
     index: "01",
-    title: "Property Management",
+    title: "Estate & Ranch Oversight",
     image: null,
     summary:
-      "Every aspect of oversight handled under one roof: tenant screening, rent collection, maintenance, and transparent financial reporting.",
-    points: ["Tenant & lease administration", "Rent collection & accounting", "Financial reporting", "Vendor coordination"],
+      "Routine, on-site oversight of your grounds, outbuildings, and mechanical systems: scheduled inspections, freeze and mechanical checks, and every contractor managed and supervised on your behalf.",
+    points: ["Scheduled site inspections", "Mechanical & freeze-protection checks", "Contractor & vendor management", "Detailed condition reporting"],
   },
   {
     index: "02",
-    title: "Cleaning Services",
+    title: "Estate Housekeeping",
     image: null,
     summary:
-      "From routine housekeeping to deep restorative cleaning: upholstery, carpet, and specialist care performed to a museum standard.",
-    points: ["Scheduled housekeeping", "Deep & seasonal cleaning", "Upholstery & carpet care", "Turnover preparation"],
+      "A dedicated housekeeping team trained to the standard of a private residence: full turnover service, pre-arrival preparation, and specialized care for your estate's finest architectural surfaces.",
+    points: ["Turnover & changeover service", "Pre-arrival preparation", "Specialized architectural surface care", "Linens & seasonal rotation"],
   },
   {
     index: "03",
-    title: "Maintenance & Contracting",
+    title: "Preventative Maintenance & Grounds",
     image: null,
     summary:
-      "A single crew for every scale of work, from minor handyman tasks to major renovations, preserving and protecting your estate's value.",
-    points: ["Preventative maintenance", "Handyman & repairs", "Seasonal systems care", "Renovation management"],
+      "Proactive facility maintenance paired with seasonal grounds preparation, so your estate's buildings, equipment, and land are protected through every Montana season.",
+    points: ["Preventative facility maintenance", "Seasonal grounds preparation", "Winterization & freeze protection", "Outbuilding & equipment care"],
   },
 ];
 
@@ -115,9 +115,10 @@ export default function BlueprintOfCare({ images }) {
             transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="text-base leading-relaxed text-muted-foreground md:col-span-4 md:col-start-9 md:text-lg"
           >
-            Rather than a list of services, we offer a complete system of care.
-            Each discipline below is delivered by one cohesive team, so your
-            estate is never passed between strangers.
+            Rather than a menu of disconnected tasks, we build a customizable
+            stewardship plan around your property's exact footprint. Each
+            package below is delivered by one dedicated team, so your estate
+            is never passed between strangers.
           </motion.p>
         </div>
       </div>

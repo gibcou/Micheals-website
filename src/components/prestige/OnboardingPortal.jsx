@@ -3,28 +3,27 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Check } from "lucide-react";
 
 const ESTATE_TYPES = [
-  "Primary residence",
-  "Second home / vacation estate",
-  "Investment property",
-  "Commercial property",
-  "Land / ranch",
+  "Primary estate",
+  "Seasonal compound / vacation estate",
+  "Ranch or large-acreage property",
+  "Multiple properties",
 ];
 
 const GOALS = [
   "Peace of mind while away",
-  "Single point of contact for all services",
-  "Preserve and protect property value",
+  "A single point of contact for every service",
+  "Preserve and protect the property's value",
   "Free up personal time",
-  "Turnkey rental management",
+  "An on-site general manager for the estate",
 ];
 
 const SERVICES = [
-  "Property management",
-  "Cleaning services",
-  "Maintenance & contracting",
-  "Seasonal care",
+  "Estate & ranch oversight",
+  "Estate housekeeping",
+  "Preventative maintenance & grounds",
+  "Seasonal care & winterization",
   "Security oversight",
-  "Vendor coordination",
+  "Vendor & contractor coordination",
 ];
 
 const TIMELINES = ["Immediately", "Within 1 month", "1-3 months", "Just exploring"];
@@ -152,9 +151,10 @@ export default function OnboardingPortal() {
                 estate receives the attention it deserves.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-background/60">
-                Engagements begin with a dedicated monthly retainer, tailored
-                to each estate. We do not publish rates; every proposal is
-                composed around the property it serves.
+                Engagements begin with a dedicated monthly retainer, built
+                around a customized stewardship package tailored to your
+                estate's exact footprint. We do not publish rates; every
+                proposal is composed around the property it serves.
               </p>
             </div>
           </div>
@@ -242,7 +242,7 @@ export default function OnboardingPortal() {
                           <Field label="Where is it located?">
                             <input
                               className={inputClass}
-                              placeholder="Bozeman, MT or city & area"
+                              placeholder="City or ranch name, Montana"
                               value={form.estate_location}
                               onChange={(e) => set("estate_location", e.target.value)}
                             />

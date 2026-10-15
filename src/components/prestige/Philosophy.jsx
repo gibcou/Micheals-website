@@ -5,15 +5,15 @@ import { Image } from "@/components/ui/image";
 const PILLARS = [
   {
     label: "Our Vision",
-    body: "To be the single, trusted point of contact for a discerning portfolio of clients, simplifying their lives by delivering a full spectrum of exceptional services from one cohesive team.",
+    body: "To be the single, trusted point of contact for owners of Montana's finest private estates, seasonal compounds, and ranches, delivering complete peace of mind through one cohesive team on the ground.",
   },
   {
     label: "Our Mission",
-    body: "To streamline our clients' lives through comprehensive, personalized estate and lifestyle management, saving invaluable time and providing complete peace of mind.",
+    body: "To serve as the owner's on-site general manager, overseeing grounds, outbuildings, and mechanical systems with the discretion and accountability of a trusted steward, so absentee owners enjoy complete peace of mind.",
   },
   {
     label: "Our Standard",
-    body: "Every interaction reflects our core values of quality, integrity, and professionalism, ensuring your needs are met with meticulous attention to detail.",
+    body: "Every interaction reflects our core values of discretion, integrity, and professionalism, ensuring your estate's needs are met with meticulous attention to detail.",
   },
 ];
 
@@ -55,10 +55,11 @@ export default function Philosophy({ aboutImage }) {
               of <span className="italic font-normal">perfection.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              PEMGroup was founded on a simple recognition: discerning owners in
-              the Bozeman area needed a single, trusted point of contact to
-              expertly manage their properties and lifestyles. We built that
-              umbrella, and we hold it with unwavering care.
+              PEMGroup was founded on a simple recognition: owners of Montana's
+              private estates, seasonal compounds, and working ranches needed a
+              single, trusted steward on the ground, one who treats their land,
+              buildings, and mechanical systems with the same care as their own.
+              We built that umbrella, and we hold it with unwavering discretion.
             </p>
           </motion.div>
         </div>

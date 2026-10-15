@@ -5,7 +5,7 @@ const DAYS = [
   {
     day: "Monday",
     title: "The Walk-Through",
-    body: "Every room, system, and lock inspected on site. Findings photographed, logged, and shared with you before lunch.",
+    body: "Every structure, system, and lock inspected on site, main house, outbuildings, and grounds alike. Findings photographed, logged, and shared with you before lunch.",
   },
   {
     day: "Tuesday",
@@ -15,12 +15,12 @@ const DAYS = [
   {
     day: "Wednesday",
     title: "Housekeeping Reset",
-    body: "Linens laundered, surfaces detailed, and seasonal rotation handled to hotel standard.",
+    body: "Linens laundered, surfaces detailed, and seasonal rotation handled to a private-estate standard.",
   },
   {
     day: "Thursday",
-    title: "Guest & Calendar Care",
-    body: "Arrivals staged, keys managed, and every stay prepared as if for family.",
+    title: "Owner Arrival Care",
+    body: "Arrivals staged and the main house, guest quarters, and grounds prepared exactly as expected, whether you are arriving yourself or sending family and friends.",
   },
   {
     day: "Friday",
@@ -41,10 +41,10 @@ export default function AdvisorWeek() {
           className="max-w-3xl"
         >
           <span className="text-[11px] uppercase tracking-luxe text-accent">
-            The Advisor&apos;s Week
+            The Estate Manager&apos;s Week
           </span>
           <h2 className="mt-6 font-display text-5xl font-medium leading-[1.02] tracking-tight text-foreground md:text-6xl">
-            What your advisor handles,
+            What your estate manager handles,
             <br />
             <span className="italic font-normal">while you live.</span>
           </h2>
