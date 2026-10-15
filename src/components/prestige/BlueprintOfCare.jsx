@@ -115,10 +115,12 @@ export default function BlueprintOfCare({ images }) {
             transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="text-base leading-relaxed text-muted-foreground md:col-span-4 md:col-start-9 md:text-lg"
           >
-            Rather than a menu of disconnected tasks, we build a customizable
-            stewardship plan around your property's exact footprint. Each
-            package below is delivered by one dedicated team, so your estate
-            is never passed between strangers.
+            This is not a menu to choose from. The three disciplines below,
+            oversight, housekeeping, and preventative care, are inseparable
+            parts of one blueprint, each watching for what the others would
+            otherwise miss. We engage them together, as a single program
+            under one dedicated team, so your estate is cared for in full,
+            never in pieces.
           </motion.p>
         </div>
       </div>
@@ -132,6 +134,17 @@ export default function BlueprintOfCare({ images }) {
             i={i}
           />
         ))}
+        <div className="border-t border-border">
+          <div className="mx-auto max-w-[1600px] px-6 py-16 md:px-12 md:py-20">
+            <p className="max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              Retained individually, any one of these disciplines is
+              incomplete: an estate inspected but not maintained, or
+              immaculate but unwatched, is only half cared for. We take on
+              the whole blueprint, or none of it, so nothing about your
+              estate is ever left to chance.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
