@@ -66,7 +66,7 @@ export default function Hero({ heroImage, heroVideo }) {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="mb-6 text-[11px] uppercase tracking-luxe text-background/70"
           >
-            Comprehensive Estate & Lifestyle Management
+            Private Estate & Ranch Stewardship, Montana
           </motion.p>
 
           <motion.h1
@@ -86,9 +86,10 @@ export default function Hero({ heroImage, heroVideo }) {
             transition={{ duration: 0.8, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 max-w-xl text-base leading-relaxed text-background/85 md:text-lg"
           >
-            One trusted point of contact for property management, cleaning, and
-            maintenance, so your estate is cared for with the discretion and
-            precision of a private concierge.
+            A single, on-site general manager for your grounds, outbuildings,
+            and mechanical systems — so your private estate, seasonal
+            compound, or ranch is cared for with absolute discretion, whether
+            you are in residence or a thousand miles away.
           </motion.p>
 
           <motion.div

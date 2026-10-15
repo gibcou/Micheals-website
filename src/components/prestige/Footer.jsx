@@ -21,9 +21,9 @@ export default function Footer() {
               <span className="italic font-normal">in trusted hands.</span>
             </h2>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
-              We invite you to begin a private consultation. A dedicated advisor
-              will walk you through how a single team can carry every detail of
-              your property, so you are free to live.
+              We invite you to begin a private consultation. A dedicated estate
+              manager will walk you through how a single team can carry every
+              detail of your property, so you are free to live.
             </p>
             <button
               onClick={() => scrollTo("#onboarding")}
@@ -60,7 +60,7 @@ export default function Footer() {
                 <p className="mt-3 text-sm leading-relaxed text-foreground/80">
                   Bozeman, Montana
                   <br />
-                  Serving the greater Gallatin Valley
+                  Serving private estates & ranches statewide
                 </p>
               </div>
             </div>
@@ -74,8 +74,9 @@ export default function Footer() {
               Prestige<span className="text-accent">.</span>
             </span>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Comprehensive estate & lifestyle management. One trusted point of
-              contact for discerning owners.
+              On-site estate & ranch stewardship for Montana's private estates
+              and seasonal compounds. One trusted point of contact for
+              discerning owners.
             </p>
           </div>
 
@@ -84,9 +85,9 @@ export default function Footer() {
               Services
             </span>
             <ul className="mt-4 space-y-2 text-sm text-foreground/80">
-              <li>Property Management</li>
-              <li>Cleaning Services</li>
-              <li>Maintenance & Contracting</li>
+              <li>Estate & Ranch Oversight</li>
+              <li>Estate Housekeeping</li>
+              <li>Preventative Maintenance & Grounds</li>
             </ul>
           </div>
 
