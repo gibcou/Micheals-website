@@ -3,7 +3,7 @@
   "redirects": [
     {
       "source": "/clientportal",
-      "destination": "https://micheals-website-portal.vercel.app",
+      "destination": "https://micheals-website-portal.vercel.app/login",
       "permanent": false
     }
   ]
