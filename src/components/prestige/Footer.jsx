@@ -122,6 +122,11 @@ export default function Footer() {
                   Apply
                 </button>
               </li>
+              <li>
+                <a href="/clientportal" className="hover:text-accent">
+                  Client Portal
+                </a>
+              </li>
             </ul>
           </div>
         </div>
