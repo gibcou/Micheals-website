@@ -1,10 +1,13 @@
 {
   "outputDirectory": "dist",
-  "redirects": [
+  "rewrites": [
     {
       "source": "/clientportal",
-      "destination": "https://micheals-website-portal.vercel.app/login",
-      "permanent": false
+      "destination": "https://micheals-website-portal.vercel.app/clientportal/login"
+    },
+    {
+      "source": "/clientportal/:path*",
+      "destination": "https://micheals-website-portal.vercel.app/clientportal/:path*"
     }
   ]
 }
