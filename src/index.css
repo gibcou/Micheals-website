@@ -139,8 +139,8 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 8px;
-      height: 8px;
+      width: 16px;
+      height: 16px;
       border-radius: 9999px;
       background: hsl(var(--foreground));
       pointer-events: none;
@@ -150,10 +150,10 @@
       mix-blend-mode: difference;
     }
     .cursor-dot.is-ring {
-      width: 44px;
-      height: 44px;
+      width: 52px;
+      height: 52px;
       background: transparent;
-      border: 1px solid hsl(var(--accent));
+      border: 2px solid hsl(var(--accent));
       mix-blend-mode: normal;
     }
     body {
