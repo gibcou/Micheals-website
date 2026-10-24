@@ -1,3 +1,10 @@
 {
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/clientportal",
+      "destination": "https://micheals-website-portal.vercel.app",
+      "permanent": false
+    }
+  ]
 }

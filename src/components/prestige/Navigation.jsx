@@ -52,6 +52,12 @@ export default function Navigation() {
                   {l.label}
                 </button>
               ))}
+              <a
+                href="/clientportal"
+                className="nav-link text-[11px] uppercase tracking-luxe text-foreground/70 transition-colors hover:text-foreground"
+              >
+                Client Portal
+              </a>
               <button
                 onClick={() => handleNav("#onboarding")}
                 className="border border-foreground/30 px-5 py-2.5 text-[11px] uppercase tracking-luxe text-foreground transition-colors hover:bg-foreground hover:text-background"
@@ -79,6 +85,12 @@ export default function Navigation() {
                   {l.label}
                 </button>
               ))}
+              <a
+                href="/clientportal"
+                className="block w-full py-3 text-left text-xs uppercase tracking-luxe text-foreground/80"
+              >
+                Client Portal
+              </a>
               <button
                 onClick={() => handleNav("#onboarding")}
                 className="mt-4 w-full border border-foreground/30 py-3 text-[11px] uppercase tracking-luxe text-foreground"
