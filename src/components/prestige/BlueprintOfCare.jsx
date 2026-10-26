@@ -5,27 +5,27 @@ import { Image } from "@/components/ui/image";
 const SERVICES = [
   {
     index: "01",
-    title: "Estate & Ranch Oversight",
+    title: "Property Management",
     image: null,
     summary:
-      "Routine, on-site oversight of your grounds, outbuildings, and mechanical systems: scheduled inspections, freeze and mechanical checks, and every contractor managed and supervised on your behalf.",
-    points: ["Scheduled site inspections", "Mechanical & freeze-protection checks", "Contractor & vendor management", "Detailed condition reporting"],
+      "Comprehensive asset protection. From routine mechanical and environmental checks to rigorous vendor oversight and financial reporting, we act as your single point of contact to ensure your estate is meticulously maintained in your absence.",
+    points: ["Mechanical & environmental checks", "Vendor oversight & management", "Financial reporting", "Single point of contact"],
   },
   {
     index: "02",
-    title: "Estate Housekeeping",
+    title: "Cleaning Services",
     image: null,
     summary:
-      "A dedicated housekeeping team trained to the standard of a private residence: full turnover service, pre-arrival preparation, and specialized care for your estate's finest architectural surfaces.",
-    points: ["Turnover & changeover service", "Pre-arrival preparation", "Specialized architectural surface care", "Linens & seasonal rotation"],
+      "Immaculate interiors executed to elite standards. We provide meticulous housekeeping and deep-cleaning protocols tailored specifically for high-end finishes, fine textiles, and luxury living spaces.",
+    points: ["Meticulous housekeeping", "Deep-cleaning protocols", "Fine textile & finish care", "Pre-arrival preparation"],
   },
   {
     index: "03",
-    title: "Preventative Maintenance & Grounds",
+    title: "Maintenance & Contracting",
     image: null,
     summary:
-      "Proactive facility maintenance paired with seasonal grounds preparation, so your estate's buildings, equipment, and land are protected through every Montana season.",
-    points: ["Preventative facility maintenance", "Seasonal grounds preparation", "Winterization & freeze protection", "Outbuilding & equipment care"],
+      "Skilled trade execution without the runaround. From proactive preventative maintenance and seasonal winterization to complex repairs, our in-house capabilities and vetted contractor network keep your property operating at peak performance.",
+    points: ["Preventative maintenance", "Seasonal winterization", "Complex repairs", "Vetted contractor network"],
   },
 ];
 
