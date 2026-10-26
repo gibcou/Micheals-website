@@ -75,9 +75,9 @@ export default function Hero({ heroImage, heroVideo }) {
             transition={{ duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-[15vw] font-medium leading-[0.95] tracking-tight text-background md:text-[8vw] lg:text-[7.5rem]"
           >
-            Your Estate,
+            Absolute Oversight.
             <br />
-            <span className="italic font-normal">Perfected.</span>
+            <span className="italic font-normal">Zero Friction.</span>
           </motion.h1>
 
           <motion.p
@@ -86,10 +86,11 @@ export default function Hero({ heroImage, heroVideo }) {
             transition={{ duration: 0.8, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 max-w-xl text-base leading-relaxed text-background/85 md:text-lg"
           >
-            A single, on-site general manager for your grounds, outbuildings,
-            and mechanical systems — so your private estate, seasonal
-            compound, or ranch is cared for with absolute discretion, whether
-            you are in residence or a thousand miles away.
+            Your estate demands precision, discretion, and relentless
+            attention to detail. We unify property management, high-end
+            maintenance, and bespoke care under a single standard of
+            excellence, keeping your investment protected, pristine, and
+            ready the moment you walk through the door.
           </motion.p>
 
           <motion.div
