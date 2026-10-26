@@ -16,14 +16,14 @@ export default function Footer() {
               The Final Handshake
             </span>
             <h2 className="mt-6 font-display text-5xl font-medium leading-[1.02] tracking-tight text-foreground md:text-7xl">
-              Your estate,
+              Secure your estate's
               <br />
-              <span className="italic font-normal">in trusted hands.</span>
+              <span className="italic font-normal">standard.</span>
             </h2>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
-              We invite you to begin a private consultation. A dedicated estate
-              manager will walk you through how a single team can carry every
-              detail of your property, so you are free to live.
+              Experience the peace of mind that comes with true operational
+              control. Contact us today to discuss a customized management
+              plan for your property.
             </p>
             <button
               onClick={() => scrollTo("#onboarding")}
@@ -85,9 +85,9 @@ export default function Footer() {
               Services
             </span>
             <ul className="mt-4 space-y-2 text-sm text-foreground/80">
-              <li>Estate & Ranch Oversight</li>
-              <li>Estate Housekeeping</li>
-              <li>Preventative Maintenance & Grounds</li>
+              <li>Property Management</li>
+              <li>Cleaning Services</li>
+              <li>Maintenance & Contracting</li>
             </ul>
           </div>
 
