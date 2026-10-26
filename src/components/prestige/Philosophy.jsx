@@ -50,16 +50,18 @@ export default function Philosophy({ aboutImage }) {
               The Philosophy
             </span>
             <h2 className="mt-6 font-display text-4xl font-medium leading-tight tracking-tight text-foreground md:text-5xl">
-              The quiet aftermath
+              Built for the standard
               <br />
-              of <span className="italic font-normal">perfection.</span>
+              of the <span className="italic font-normal">mountains.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              PEMGroup was founded on a simple recognition: owners of Montana's
-              private estates, seasonal compounds, and working ranches needed a
-              single, trusted steward on the ground, one who treats their land,
-              buildings, and mechanical systems with the same care as their own.
-              We built that umbrella, and we hold it with unwavering discretion.
+              Prestige Estate Management (PEMGroup) delivers turnkey estate and
+              lifestyle management for discerning property owners throughout
+              the greater Bozeman area. We eliminate the friction of managing
+              fragmented contractors. By centralizing preventive maintenance,
+              rigorous security protocols, and bespoke estate care into a
+              single, accountable operation, we protect the value and
+              integrity of your property year-round.
             </p>
           </motion.div>
         </div>
