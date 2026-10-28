@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const scrollTo = (href) => {
@@ -16,7 +19,7 @@ export default function Footer() {
               The Final Handshake
             </span>
             <h2 className="mt-6 font-display text-5xl font-medium leading-[1.02] tracking-tight text-foreground md:text-7xl">
-              Secure your estate's
+              Secure your estate&apos;s
               <br />
               <span className="italic font-normal">standard.</span>
             </h2>
@@ -74,7 +77,7 @@ export default function Footer() {
               Prestige<span className="text-accent">.</span>
             </span>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              On-site estate & ranch stewardship for Montana's private estates
+              On-site estate & ranch stewardship for Montana&apos;s private estates
               and seasonal compounds. One trusted point of contact for
               discerning owners.
             </p>
@@ -133,6 +136,14 @@ export default function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-4 border-t border-border pt-8 text-[11px] uppercase tracking-luxe text-muted-foreground md:flex-row md:items-center">
           <span>© {new Date().getFullYear()} Prestige Estate Management</span>
+          <div className="flex items-center gap-6">
+            <Link href="/privacy" className="hover:text-accent">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-accent">
+              Terms of Service
+            </Link>
+          </div>
           <span>Bozeman · Montana · United States</span>
         </div>
 

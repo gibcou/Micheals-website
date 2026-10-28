@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef } from "react";
 
 export default function CursorDot() {
@@ -46,5 +48,5 @@ export default function CursorDot() {
     };
   }, []);
 
-  return <div ref={dotRef} className="cursor-dot hidden md:block" aria-hidden="true" />;
+  return <div ref={dotRef} className="cursor-dot" aria-hidden="true" />;
 }

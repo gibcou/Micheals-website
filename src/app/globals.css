@@ -50,9 +50,9 @@
     --ring: 35 32% 46%;
     --radius: 0.25rem;
 
-    --font-heading: 'Recoleta', 'Playfair Display', ui-serif, Georgia, serif;
-    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    --font-display: 'Recoleta', 'Playfair Display', ui-serif, Georgia, serif;
+    --font-heading: 'Recoleta', var(--next-playfair), ui-serif, Georgia, serif;
+    --font-body: var(--next-inter), ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Recoleta', var(--next-playfair), ui-serif, Georgia, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   }
 }

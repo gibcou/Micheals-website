@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react"
 import { useSize } from "../../hooks/use-size"
 import { cn } from "../../lib/utils"
@@ -11,7 +13,7 @@ export function useResponsiveImage({ parsed, fittingType, focalPoint, quality, c
 
   React.useImperativeHandle(parentRef, () => imgRef.current)
   React.useEffect(() => setLoaded(false), [parsed.baseUrl])
-  
+
 
   const crop = fittingType !== "fit"
   // Wait for useSize's pre-paint measurement before requesting a transform.

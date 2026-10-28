@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react"
 import { cn } from "../../lib/utils"
 import { buildSrcSet, buildTransformUrl, splitImageProps } from "./image-helpers"
@@ -16,7 +18,7 @@ export const ResponsiveImage = React.forwardRef(
         className={cn("inline-block relative", className)}
         style={{ aspectRatio, ...style }}
         {...wrapperProps}
-        
+
       >
         {/* Contain both image layers inside the padded content box without adding an edit target. */}
         <span data-source-location={undefined} className="block relative w-full h-full overflow-hidden">
