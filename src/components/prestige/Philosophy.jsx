@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
-import { Image } from "@/components/ui/image";
+import Image from "next/image";
 
 const PILLARS = [
   {
@@ -32,10 +34,9 @@ export default function Philosophy({ aboutImage }) {
             <Image
               src={aboutImage}
               alt="A formally set dining table in a quiet luxury estate"
-              width={1264}
-              height={948}
-              className="h-full w-full transition-transform duration-1000 ease-out group-hover:scale-[1.05]"
-              fittingType="fill"
+              fill
+              sizes="(min-width: 768px) 58vw, 100vw"
+              className="object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.05]"
             />
           </motion.div>
 

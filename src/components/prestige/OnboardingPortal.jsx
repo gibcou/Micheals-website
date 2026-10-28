@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check } from "lucide-react";
@@ -153,7 +155,7 @@ export default function OnboardingPortal() {
               <p className="mt-4 text-sm leading-relaxed text-background/60">
                 Engagements begin with a dedicated monthly retainer, built
                 around a customized stewardship package tailored to your
-                estate's exact footprint. We do not publish rates; every
+                estate&apos;s exact footprint. We do not publish rates; every
                 proposal is composed around the property it serves.
               </p>
             </div>

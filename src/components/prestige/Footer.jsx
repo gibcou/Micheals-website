@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 export default function Footer() {
@@ -16,7 +18,7 @@ export default function Footer() {
               The Final Handshake
             </span>
             <h2 className="mt-6 font-display text-5xl font-medium leading-[1.02] tracking-tight text-foreground md:text-7xl">
-              Secure your estate's
+              Secure your estate&apos;s
               <br />
               <span className="italic font-normal">standard.</span>
             </h2>
@@ -74,7 +76,7 @@ export default function Footer() {
               Prestige<span className="text-accent">.</span>
             </span>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              On-site estate & ranch stewardship for Montana's private estates
+              On-site estate & ranch stewardship for Montana&apos;s private estates
               and seasonal compounds. One trusted point of contact for
               discerning owners.
             </p>

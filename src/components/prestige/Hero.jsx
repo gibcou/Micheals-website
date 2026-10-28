@@ -1,6 +1,8 @@
+"use client";
+
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Image } from "@/components/ui/image";
+import Image from "next/image";
 
 export default function Hero({ heroImage, heroVideo }) {
   const sectionRef = useRef(null);
@@ -34,10 +36,10 @@ export default function Hero({ heroImage, heroVideo }) {
         <Image
           src={heroImage}
           alt="Architectural interior of a luxury mountain estate at blue hour"
-          width={1480}
-          height={819}
-          className="ken-burns h-full w-full"
-          fittingType="fill"
+          fill
+          priority
+          sizes="100vw"
+          className="ken-burns h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/30 via-foreground/20 to-foreground/55" />
       </motion.div>
