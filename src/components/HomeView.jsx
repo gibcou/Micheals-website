@@ -1,7 +1,6 @@
 "use client";
 
 import Preloader from "@/components/prestige/Preloader";
-import CursorDot from "@/components/prestige/CursorDot";
 import Navigation from "@/components/prestige/Navigation";
 import Hero from "@/components/prestige/Hero";
 import BlueprintOfCare from "@/components/prestige/BlueprintOfCare";
@@ -26,7 +25,6 @@ export default function HomeView() {
   return (
     <div className="relative bg-background">
       <Preloader />
-      <CursorDot />
       <Navigation />
       <main>
         <Hero heroImage={HERO_IMAGE} heroVideo={HERO_VIDEO} />

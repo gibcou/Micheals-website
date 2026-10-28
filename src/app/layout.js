@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import { Toaster } from "@/components/ui/toaster";
+import CursorDot from "@/components/prestige/CursorDot";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body>
         {children}
+        <CursorDot />
         <Toaster />
         {/* Heatmap recorder — always on; Umami matches data-domains itself. */}
         <Script
