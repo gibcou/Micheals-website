@@ -133,6 +133,14 @@ export default function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-4 border-t border-border pt-8 text-[11px] uppercase tracking-luxe text-muted-foreground md:flex-row md:items-center">
           <span>© {new Date().getFullYear()} Prestige Estate Management</span>
+          <div className="flex items-center gap-6">
+            <a href="/privacy" className="hover:text-accent">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="hover:text-accent">
+              Terms of Service
+            </a>
+          </div>
           <span>Bozeman · Montana · United States</span>
         </div>
 
