@@ -3,11 +3,11 @@
   "rewrites": [
     {
       "source": "/clientportal",
-      "destination": "https://micheals-website-portal-git-nextjs-migration-gibson-coutleys-projects.vercel.app/clientportal/login"
+      "destination": "https://micheals-website-portal.vercel.app/clientportal/login"
     },
     {
       "source": "/clientportal/:path*",
-      "destination": "https://micheals-website-portal-git-nextjs-migration-gibson-coutleys-projects.vercel.app/clientportal/:path*"
+      "destination": "https://micheals-website-portal.vercel.app/clientportal/:path*"
     }
   ]
 }
