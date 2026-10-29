@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/clientportal",
-      "destination": "https://micheals-website-portal.vercel.app/clientportal/login"
+      "destination": "https://micheals-website-portal.vercel.app/clientportal"
     },
     {
       "source": "/clientportal/:path*",
