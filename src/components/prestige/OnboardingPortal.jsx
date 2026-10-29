@@ -115,11 +115,15 @@ export default function OnboardingPortal() {
     }
     setSubmitting(true);
     try {
-      // Here you would typically send the form data to your backend
-      console.log("Form data:", form);
+      const res = await fetch("/api/onboarding", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Request failed");
       setDone(true);
     } catch (e) {
-      setError("Something went wrong sending your request. Please try again.");
+      setError("Something went wrong sending your request. Please try again, or reach us directly.");
     } finally {
       setSubmitting(false);
     }
