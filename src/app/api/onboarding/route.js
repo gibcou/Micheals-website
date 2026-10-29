@@ -41,9 +41,14 @@ export async function POST(request) {
   const details = sanitize(body.details);
 
   const apiKey = process.env.RESEND_API_KEY;
-  const ownerEmail = process.env.OWNER_NOTIFICATION_EMAIL;
+  // Comma-separated so this can fan out to more than one inbox, e.g.
+  // "owner@gmail.com,advisor@prestigeestatemanagement.com".
+  const ownerEmails = (process.env.OWNER_NOTIFICATION_EMAIL || "")
+    .split(",")
+    .map((e) => e.trim())
+    .filter(Boolean);
 
-  if (!apiKey || !ownerEmail) {
+  if (!apiKey || ownerEmails.length === 0) {
     // Don't tell the submitter anything is broken server-side -- but don't
     // silently pretend it worked either. Log loudly so this is visible in
     // Vercel's logs, since a missing env var here means every lead since
@@ -88,7 +93,7 @@ export async function POST(request) {
   try {
     const { error } = await resend.emails.send({
       from: `Prestige Estate Management <${fromAddress}>`,
-      to: ownerEmail,
+      to: ownerEmails,
       replyTo: email,
       subject: `New consultation request from ${name}`,
       html,
